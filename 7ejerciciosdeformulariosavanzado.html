@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    CAMILA NAZARET SOLANO FLORES<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">volver a inicio</a>
+            <br> 
+            <h1>Formularios Avanzados</h1>
+            <hr>
+            <ul>
+                <li><a href="#formulario1">Ir a formulario avanzado 1</a></li>
+                <li><a href="#formulario2">Ir a formulario avanzado 2</a></li>
+                <li><a href="#formulario3">Ir a formulario avanzado 3</a></li>
+            </ul> 
+        </nav>
+    </header>
+    <main>
+        <section id="formulario1">
+            <h3>Formulario avanzado 1</h3>
+            <article>
+                <fieldset>
+                    <legend>Ejemplo</legend>   
+                    <form>
+                        <label for="readonly">Nombres:</label>
+                        <input type="text" id="readonly" value="Camila Nazaret" readonly>
+                        <br>
+                        <br>
+                        <label for="readonly">Apellidos:</label>
+                        <input type="text" id="readonly" value="Solano Flores" readonly>
+                        <br>
+                        <br>
+                        <label for="readonly">Ubicación:</label>
+                        <input type="text" id="readonly" value="Ejemplo de solo lectura" readonly>
+                        <br>
+                        <br>
+                        <label for="readonly">Género:</label>
+                        <input type="text" id="readonly" value="Femenino" readonly>
+                        <br>
+                        <br>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Borrar">
+                    </form>
+                </fieldset>
+            </article>
+            <article>
+                <fieldset>
+                    <legend>Deshabilitado</legend>   
+                    <form>
+                        <label for="disabled">Nombres:</label>
+                        <input type="text" id="readonly" value="Camila Nazaret" disabled>
+                        <br>
+                        <br>
+                        <label for="disabled">Apeliidos:</label>
+                        <input type="text" id="disabled" value="Ejemplo deshabilitado" disabled>
+                        <br>
+                        <br>
+                        <label for="disabled">Lugar de nacimiento:</label>
+                        <input type="text" id="disabled" value="Ejemplo deshabilitado" disabled>
+                        <br>
+                        <label for="disabled">Lugar de Recidencia:</label>
+                        <input type="text" id="disabled" value="Ejemplo deshabilitado" disabled>
+                        <br>
+                        <label for="disabled">Carnet:</label>
+                        <input type="text" id="disabled" value="Ejemplo deshabilitado" disabled>
+                        <br>
+                        <br>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Borrar">
+                    </form>
+                </fieldset>
+            </article>
+            <article>
+                <fieldset>
+                    <legend>Formulario</legend>   
+                    <form>
+                        <label for="placeholder">Nombres:</label>
+                        <input type="text" id="placeholder" placeholder="Escribe aquí...">
+                        <br>
+                        <br>
+                        <label for="placeholder">Apeliidos:</label>
+                        <input type="text" id="placeholder" placeholder="Escribe aquí...">
+                        <br>
+                        <br>
+                        <label for="placeholder">E-mail:</label>
+                        <input type="text" id="placeholder" placeholder="Escribe aquí...">
+                        <br>
+                        <br>
+                        <label for="placeholder">Edad:</label>
+                        <input type="text" id="placeholder" placeholder="Escribe aquí...">
+                        <br>
+                        <br>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Borrar">
+                     </form>
+                </fieldset>
+             </article>
+        </section>
+        <hr>
+        <section id="formulario2">
+            <h3>Formulario avanzado 2</h3>
+            <article>
+                <fieldset>
+                    <legend>Formulario 2</legend>
+                    <form>
+                        <label for="select">Selección normal:</label>
+                        <select id="select" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="op1">Opción 1</option>
+                        <option value="op2">Opción 2</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label>Selección en grupo:</label>
+                        <select required>
+                            <optgroup label="Grupo 1">
+                                <option value="g1-op1">Opción 1</option>
+                                <option value="g1-op2">Opción 2</option>
+                            </optgroup>
+                            <optgroup label="Grupo 2">
+                                <option value="g2-op1">Opción 3</option>
+                                <option value="g2-op2">Opción 4</option>
+                            </optgroup>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="datalist">Detalles:</label>
+                        <input list="opciones" id="datalist" required>
+                        <datalist id="opciones">
+                            <option value="Opción A">
+                            <option value="Opción B">
+                            <option value="Opción C">
+                        </datalist>
+                        <br>
+                        <br>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Borrar">
+                    </form>
+                </fieldset>
+            </article>
+            <article>
+                <fieldset>
+                    <legend>Formulario 2</legend>
+                    <form>
+                        <label for="select">Escoge:</label>
+                        <select id="select" required>
+                        <option value="">Escoge una opción</option>
+                        <option value="op1">Opción 1</option>
+                        <option value="op2">Opción 2</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label>Selección en grupo:</label>
+                        <select required>
+                            <optgroup label="Grupo 1">
+                                <option value="g1-op1">Opción 1</option>
+                                <option value="g1-op2">Opción 2</option>
+                            </optgroup>
+                            <optgroup label="Grupo 2">
+                                <option value="g2-op1">Opción 3</option>
+                                <option value="g2-op2">Opción 4</option>
+                            </optgroup>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="datalist">Detalles:</label>
+                        <input list="opciones" id="datalist" required>
+                        <datalist id="opciones">
+                            <option value="Opción A">
+                            <option value="Opción B">
+                            <option value="Opción C">
+                        </datalist>
+                        <br>
+                        <br>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Borrar">
+                    </form>
+                </fieldset>
+            </article>
+            <article>
+                <fieldset>
+                    <legend>Formulario 2</legend>
+                    <form>
+                        <label for="select">Opciones:</label>
+                        <select id="select" required>
+                        <option value="">Seleccione</option>
+                        <option value="op1">Opción 1</option>
+                        <option value="op2">Opción 2</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label>Escoge uno:</label>
+                        <select required>
+                            <optgroup label="Grupo 1">
+                                <option value="g1-op1">Opción 1</option>
+                                <option value="g1-op2">Opción 2</option>
+                            </optgroup>
+                            <optgroup label="Grupo 2">
+                                <option value="g2-op1">Opción 3</option>
+                                <option value="g2-op2">Opción 4</option>
+                            </optgroup>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="datalist">Detalles:</label>
+                        <input list="opciones" id="datalist" required>
+                        <datalist id="opciones">
+                            <option value="Opción A">
+                            <option value="Opción B">
+                            <option value="Opción C">
+                        </datalist>
+                        <br>
+                        <br>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Borrar">
+                    </form>
+                </fieldset>
+            </article>
+        </section>
+        <hr>
+        <section id="formulario3">
+            <h3>Formulario avanzado 3</h3>
+            <article>
+                 <fieldset>
+                 <legend>Formularito</legend>
+                    <form>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" required placeholder="Aqui su nombre">
+                    <br>
+                    <br>
+                    <label for="Apellido">Correo electrónico:</label>
+                    <input type="Apellido" id="Apeliido" required placeholder="Aqui su Apeliido">
+                    <br>
+                    <br>
+                    <label for="materias">Seleccione su materia científica:</label>
+                    <select id="materias" multiple required>
+                        <option value="Ig.Comercial">Ig. Comercial</option>
+                        <option value="Bioquímica">Bioquímica</option>
+                        <option value="Administración">Administración</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Biología">Biología</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="comentarios">Comentarios:</label>
+                    <textarea id="comentarios" placeholder="Escriba aquí"></textarea>
+                    <br>
+                    <br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                </fieldset>
+                </form>
+            </article>
+            <article>
+                <fieldset>
+                <legend>Formularito</legend>
+                   <form>
+                   <label for="nombre">Nombres:</label>
+                   <input type="text" id="nombre" required placeholder="Ingrese sus nombres">
+                   <br>
+                   <br>
+                   <label for="email">Apeliidos:</label>
+                   <input type="email" id="email" required placeholder="Ingrese su e-mail">
+                   <br>
+                   <br>
+                   <label for="ciudad">Seleccione su ciudad:</label>
+                   <select id="ciudad" multiple required>
+                       <option value="La Paz">La Paz</option>
+                       <option value="Santa Cruz">Santa Cruz</option>
+                       <option value="Cochabamba">Cochabamba</option>
+                       <option value="Sucre">Sucre</option>
+                       <option value="Tarija">Tarija</option>
+                   </select>
+                   <br>
+                   <br>
+                   <label for="comentarios">Comentarios adicionales:</label>
+                   <textarea id="comentarios" placeholder="Escribelo aquí"></textarea>
+                   <br>
+                   <br>
+                   <input type="submit" value="Enviar">
+                   <input type="reset" value="Borrar">
+               </fieldset>
+               </form>
+           </article>
+           <article>
+            <fieldset>
+            <legend>Formularito</legend>
+               <form>
+               <label for="nombre">Nombre:</label>
+               <input type="text" id="nombre" required placeholder="Ingrese su nombre">
+               <br>
+               <br>
+               <label for="email">Correo electrónico:</label>
+               <input type="email" id="email" required placeholder="Ingrese su correo">
+               <br>
+               <br>
+               <label for="materias">Seleccione su materia científica:</label>
+               <select id="materias" multiple required>
+                   <option value="Matemática">Matemáticas</option>
+                   <option value="Química">Química</option>
+                   <option value="Programacion">Programación</option>
+                   <option value="Física">Física</option>
+                   <option value="Biología">Biología</option>
+               </select>
+               <br>
+               <br>
+               <label for="comentarios">Comentarios adicionales:</label>
+               <textarea id="comentarios" placeholder="Escriba aquí"></textarea>
+               <br>
+               <br>
+               <input type="submit" value="Enviar">
+               <input type="reset" value="Borrar">
+           </fieldset>
+           </form>
+       </article>
+        </section>
+    </main>
+    <br>
+    <footer class="pie-de-pagina">
+        <section class="pie-de-pagina">
+        <a href="#">Volver arriba</a>   
+        </section>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    CAMILA NAZARET SOLANO FLORES<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialogos html Cami Solano</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">volver a inicio</a>
+            <br>
+        </nav>
+        <h1>Dialog</h1>
+        <hr>
+    </header>
+    <main>
+        <section>
+            <button onclick="showMessage('modal1')">Bienvenido a mi sitio</button>
+            <dialog id="modal1">
+                <p>Hola, bienvenido a mi sitio web</p>
+            <button onclick="closeMessage('modal1')">Cerrar mensaje</button>
+            </dialog>
+            <br>
+            <button onclick="showMessage('modal2')">¡Gracias por visitarnos!</button>
+            <dialog id="modal2">
+                <p>Esperamos que disfrutes la experiencia!</p>
+            <button onclick="closeMessage('modal2')">Cerrar mensaje</button>
+            </dialog>
+            <br>
+            <button onclick="showMessage('modal3')">¿Qué hay de nuevo?</button>
+            <dialog id="modal3">
+                <p>Acabo de actualizar algunas cosas. ¡Echa un vistazo!</p>
+            <button onclick="closeMessage('modal3')">Cerrar mensaje</button>
+            </dialog>
+            <br>
+            <button onclick="showMessage('modal4')">¿Te gustaría saber más?</button>
+            <dialog id="modal4">
+                <p>¡estoy aquí para contarte todo!</p>
+            <button onclick="closeMessage('modal4')">Cerrar mensaje</button>
+            </dialog>
+            <br>
+            <button onclick="showMessage('modal5')">un secreto...</button>
+            <dialog id="modal5">
+                <p>Siempre estoy actualizando el contenido.</p>
+            <button onclick="closeMessage('modal5')">Cerrar mensaje</button>
+            </dialog>  
+            <br>  
+        </section>
+        <section>
+            <button onclick="showMessage('modal6')">Curiosidades</button>
+            <dialog id="modal6">
+                <p>Aqui no hay datos criuosos, ups!</p>
+            <button onclick="closeMessage('modal6')">Cerrar mensaje</button>
+            </dialog>
+            <br>
+            <button onclick="showMessage('modal7')">Mis proyectos</button>
+            <dialog id="modal7">
+                <p>Este es uno de mis proyectos</p>
+            <button onclick="closeMessage('modal7')">Cerrar mensaje</button>
+            </dialog>
+            <br>
+            <button onclick="showMessage('modal8')">Mensajito</button>
+            <dialog id="modal8">
+                <p>este es un mensajito</p>
+            <button onclick="closeMessage('modal8')">Cerrar mensaje</button>
+            </dialog>
+            <br>
+            <button onclick="showMessage('modal9')">Bye!!</button>
+            <dialog id="modal9">
+                <p>No dudes en volver por aquí</p>
+            <button onclick="closeMessage('modal9')">Cerrar mensaje</button>
+            </dialog>
+            <br>
+            <button onclick="showMessage('modal10')">¡Adiós!</button>
+            <dialog id="modal10">
+                <p>Gracias por pasar.</p>
+            <button onclick="closeMessage('modal10')">Cerrar mensaje</button>
+            </dialog>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Dialog Cami Solano - Todos los derechos reservados</p>
+    </footer>
+    <script>
+        function showMessage(dialogId) {
+        document.getElementById(dialogId).showModal();      
+        }
+        function closeMessage(dialogId) {
+            document.getElementById(dialogId).close();
+        }
+    </script>
+</body>
+</html>
